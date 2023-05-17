@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class CheckPrime {
 
+    /*
+      You are given a single positive integer, N. 
+      You need to find and print whether N is Prime or not. 
+    */
+
     static boolean isPrime(int n){
 
         for(int i=2; i<n; i++){
