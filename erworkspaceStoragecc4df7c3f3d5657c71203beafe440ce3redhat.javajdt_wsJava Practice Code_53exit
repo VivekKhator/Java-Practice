@@ -1,0 +1,13 @@
+[1mdiff --git a/Collection/IterateArrayList.java b/Collection/IterateArrayList.java[m
+[1mindex fe9e904..c84dc3e 100644[m
+[1m--- a/Collection/IterateArrayList.java[m
+[1m+++ b/Collection/IterateArrayList.java[m
+[36m@@ -12,7 +12,7 @@[m [mpublic class IterateArrayList {[m
+         List<String> list1 = Arrays.asList("one","two","three","four","five");[m
+         [m
+         /* Traversal in ArrayList */[m
+[31m-[m
+[32m+[m[32m/* comment added */[m
+         //Method-1: using simple loop [m
+         System.out.println("Simple for loop: ");[m
+         for(int i=0; i<list1.size(); i++){[m

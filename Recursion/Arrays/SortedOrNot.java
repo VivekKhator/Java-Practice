@@ -5,17 +5,14 @@ import java.util.Scanner;
 public class SortedOrNot {
 
     public static boolean isSorted(int[] arr){
-        return helper(arr, 0, 1);
+        return helper(arr, 0);
     }
     
-    public static boolean helper(int[] arr, int s, int e){
-        if(e>arr.length-1){
+    public static boolean helper(int[] arr, int s){
+        if(s==arr.length-1){
             return true;
         }
-        if(arr[s]>arr[e]){
-            return false;
-        }
-        return helper(arr, s+1, e+1);
+        return arr[s]<arr[s+1] && helper(arr, s+1);
     }
     public static void main(String[] args) {
         // Scanner sc = new Scanner(System.in);

@@ -4,8 +4,7 @@ import java.util.Arrays;
 
 public class SortArray {
 
-    public static void bubbleSort(int[] arr, int n){
-        
+    public static void bubbleSort(int[] arr, int n){      
         int turn = 0;
         int count = 0;
         for(int i=0; i<n-1; i++){
@@ -14,10 +13,8 @@ public class SortArray {
                     int temp = arr[j];
                     arr[j] = arr[j+1];
                     arr[j+1] = temp;
-
                     count++;
-                }
-                
+                }               
             }
             turn++;
 
@@ -27,6 +24,17 @@ public class SortArray {
             }
         }
     }
+
+
+    public static void selectionSort(int[] arr, int n){
+
+    }
+
+
+    public static void insertionSort(int[] arr, int n){
+
+    }
+
 
     public static void printArray(int[] arr, int n){
         System.out.println("Array After Soring: " +Arrays.toString(arr));
@@ -41,6 +49,8 @@ public class SortArray {
         
         System.out.println("Array before Sorting: "+Arrays.toString(arr));
         bubbleSort(arr, n);
+        selectionSort(arr,n);
+        insertionSort(arr,n);
         printArray(arr, n);        
         
 
